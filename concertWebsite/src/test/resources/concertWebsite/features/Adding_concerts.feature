@@ -1,6 +1,6 @@
 Feature: Adding concerts
   
-  As a concert organiser
+  As a concert organizer
   I want to be able to add concerts
   So people interested in my concerts can see them
 
