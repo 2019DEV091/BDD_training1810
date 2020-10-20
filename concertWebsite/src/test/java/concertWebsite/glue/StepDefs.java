@@ -1,7 +1,10 @@
 package concertWebsite.glue;
 
+import java.util.List;
+
 import org.testng.Assert;
 
+import concertWebsite.model.Book;
 import concertWebsite.model.ConcertOrganizer;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -24,6 +27,13 @@ public class StepDefs {
 	@Then("the organizer will see {string} listed")
 	public void the_organizer_will_see_listed(String concert) {
 	    Assert.assertEquals(organizer.getListedConcert(), concert);
+	}
+	
+	@Given("I like the following books")
+	public void i_like_the_following_books(List<Book> books) {
+	   for (Book book : books) {
+		System.out.println(book);
+	}
 	}
 
 }
