@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features = "src/test/resources/concertWebsite/features", glue = "concertWebsite/glue", 
 plugin = {
-		"json:target/cucumber-report/cucumber.json" }, publish = false )
+		"json:target/cucumber-report/cucumber.json" }, publish = false)
 public class RunnerIT extends AbstractTestNGCucumberTests {
 	
 
