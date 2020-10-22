@@ -5,8 +5,10 @@ import java.util.Map;
 import concertWebsite.model.Airport;
 import concertWebsite.model.Book;
 import concertWebsite.model.Geolocation;
+import io.cucumber.java.After;
 import io.cucumber.java.DataTableType;
 import io.cucumber.java.ParameterType;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 
 public class ParameterTypes {
@@ -30,5 +32,11 @@ public class ParameterTypes {
 	@Given("the following airports")
 	public void followingAirports(Map<Airport, Geolocation> airports) {
 		airports.forEach((k,v) -> System.out.println(k+" "+v));
+	}
+	
+	
+	@After
+	public void afterScenario(Scenario scenario) {
+
 	}
 }
